@@ -1,0 +1,88 @@
+header {
+    height: 100vh;
+    padding-top: 3rem;
+    overflow: hidden;
+    background-image:linear-gradient(to bottom, rgba(29, 37, 51, 0.459), rgba(10, 68, 87, 0.253)), url(https://c4.wallpaperflare.com/wallpaper/39/346/426/sci-fi-city-hd-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/*================ CV ==================*/
+.cv {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/*=============== social network======================*/
+.socialnet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.socialnet::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/*=============== me ======================*/
+.me {
+    background: rgba(77, 181, 255, 0.5);
+    border: 1rem solid #003049;
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem ;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.me_img {
+    width: 100%;
+    height: 110%;
+}
+
+/*=============== scroll down ======================*/
+.scroll_down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+/*=============== media querys (medium) ======================*/
+@media screen and (max-width:1024px) {
+    header {
+        height: 100vh;
+    }
+}
+
+/*=============== media querys (small) ======================*/
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .socialnet,
+    .scroll_down {
+        display: none;
+    }
+}
