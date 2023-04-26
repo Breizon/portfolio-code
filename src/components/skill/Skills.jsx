@@ -75,18 +75,18 @@ const Skills = () => {
                 <small className='text-light'>Experimentado</small>
               </div>
             </article> */}
-            <article className='skill_details'>
+            {/* <article className='skill_details'>
               <BsPatchCheckFill className='skill_details-icon' />
               <div>
                 <h4>PHP</h4>
                 <small className='text-light'>Proximamente</small>
               </div>
-            </article>
+            </article> */}
             <article className='skill_details'>
               <BsPatchCheckFill className='skill_details-icon' />
               <div>
                 <h4>PostgreSQL</h4>
-                <small className='text-light'>Experimentado</small>
+                <small className='text-light'>Básico</small>
               </div>
             </article>
             <article className='skill_details'>
